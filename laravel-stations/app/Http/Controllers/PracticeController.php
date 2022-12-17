@@ -29,8 +29,8 @@ class PracticeController extends Controller
 
     // public function getPractice()
     // {
-    //     $practices = Practice::all();
-    //     return view('getPractice',['practices' => $practices]);
+    //     $practices= Practice::all();
+    //     return response()->json($practices);
     // }
 
     // public function sample()
