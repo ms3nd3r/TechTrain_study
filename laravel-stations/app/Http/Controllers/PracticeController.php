@@ -2,18 +2,28 @@
 
 namespace App\Http\Controllers;
 use App\Practice;
+use App\models\Movies;
 
 class PracticeController extends Controller
 {
+    
     public function movies()
     {
-        return view('movies');
+        $movie = Movies::all();
+        return response()->json($movie);
     }
 
     public function sample()
     {
         return view('practice');
     }
+
+    public function getPractice()
+    {
+        $practice = Practice::all();
+        return response()->json($practice);
+    }
+
 
     // public function sample2()
     // {
