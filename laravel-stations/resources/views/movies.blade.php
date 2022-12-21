@@ -7,6 +7,7 @@
     <title>movies</title>
 </head>
 <body>
+    <h1>ここはmoviesでできているページだ。</h1>
     <ul>
     @foreach ($movies as $movie)
         <li>タイトル: {{ $movie->title }}</li>

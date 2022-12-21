@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Practice;
+use App\Models\Movies;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,7 +16,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Practice::factory(10)->create();
-        Movies::factory(10)->create();
-        // ここがおかしい
+        Movies::factory(10)->create(); //ここがおかしい→useを書いていませんでした
     }
 }

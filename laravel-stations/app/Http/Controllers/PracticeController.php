@@ -6,11 +6,16 @@ use App\models\Movies;
 
 class PracticeController extends Controller
 {
-    
+    public function adMovies()
+    {
+        $movies = Movies::all();
+        return view('admin/movies',['movies' => $movies]);//bladeと接続
+    }
+
     public function movies()
     {
-        $movie = Movies::all();
-        return response()->json($movie);
+        $movies = Movies::all();
+        return view('movies',['movies' => $movies]);
     }
 
     public function sample()
@@ -20,8 +25,9 @@ class PracticeController extends Controller
 
     public function getPractice()
     {
-        $practice = Practice::all();
-        return response()->json($practice);
+        $practices = Practice::all();
+        // return response()->json($practice);
+        return view('getPractice', ['practices' => $practices]);
     }
 
 
