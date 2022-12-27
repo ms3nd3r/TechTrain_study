@@ -6,6 +6,18 @@ use App\models\Movies;
 
 class PracticeController extends Controller
 {
+    public function adMoviesStore()
+    {
+        $movies = Movies::all();
+        return view('admin/movies/store',['movies' => $movies]);//bladeと接続
+    }
+
+    public function adMoviesCreate()
+    {
+        $movies = Movies::all();
+        return view('admin/movies/create',['movies' => $movies]);//bladeと接続
+    }
+
     public function adMovies()
     {
         $movies = Movies::all();
