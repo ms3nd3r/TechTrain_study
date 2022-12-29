@@ -2,25 +2,29 @@
 
 namespace App\Http\Controllers;
 use App\Practice;
-use App\models\Movies;
+use App\Models\Movies; //models(先頭は大文字)
+
 
 class PracticeController extends Controller
 {
     public function adMoviesStore()
     {
-        $movies = Movies::all();
+        $movies = Movies::all(); 
         return view('admin/movies/store',['movies' => $movies]);//bladeと接続
     }
 
+    //モデル名movies(命名規則)→単数形に
+
     public function adMoviesCreate()
     {
-        $movies = Movies::all();
-        return view('admin/movies/create',['movies' => $movies]);//bladeと接続
+        //データは使わないのでMovies::all()消す
+        return view('admin/movies/create');//bladeと接続
     }
 
     public function adMovies()
     {
-        $movies = Movies::all();
+        $movies = Movies::where('id', '>', 5)->get();//idが5よりも大きいものを出す
+        // $movies = Movies::all();
         return view('admin/movies',['movies' => $movies]);//bladeと接続
     }
 
