@@ -2,7 +2,8 @@
 - TechTrainのRailwayの学習記録です
 
 ## History
-- HTML:2022-12-01~
+- HTML:2022-12-01~2022-12-30 **Done**
+- HTML2:2022-12-30~
 - Laravel:2022-12-10~
 - react:none
 
@@ -15,3 +16,7 @@
         - timestamps()とtimestamp()の違いを把握していないことでこうなってしまった。   
 - HTML:
     - 順調。JSに関してアロー関数の認識が薄いところがあるので、これから頑張りたい。
+    - Promiseが何もわからなかった。
+    
+- HTML2:
+    - gridで見た目を整えるのが楽しい。
