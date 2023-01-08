@@ -2,36 +2,36 @@
 
 namespace App\Http\Controllers;
 use App\Practice;
-use App\Models\Movies; //models(先頭は大文字)
+use App\Models\Movie; //models(先頭は大文字)
 
 
 class PracticeController extends Controller
 {
-    public function adMoviesStore()
+    public function adMovieStore()
     {
-        $movies = Movies::all(); 
-        return view('admin/movies/store',['movies' => $movies]);//bladeと接続
+        $movies = Movie::all(); 
+        return view('admin/movie/store',['movie' => $movies]);//bladeと接続
     }
 
     //モデル名movies(命名規則)→単数形に
 
-    public function adMoviesCreate()
+    public function adMovieCreate()
     {
         //データは使わないのでMovies::all()消す
-        return view('admin/movies/create');//bladeと接続
+        return view('admin/movie/create');//bladeと接続
     }
 
-    public function adMovies()
+    public function adMovie()
     {
-        $movies = Movies::where('id', '>', 5)->get();//idが5よりも大きいものを出す
+        $movie = Movie::where('id', '>', 5)->get();//idが5よりも大きいものを出す
         // $movies = Movies::all();
-        return view('admin/movies',['movies' => $movies]);//bladeと接続
+        return view('admin/movie',['movie' => $movies]);//bladeと接続
     }
 
-    public function movies()
+    public function movie()
     {
-        $movies = Movies::all();
-        return view('movies',['movies' => $movies]);
+        $movie = Movie::all();
+        return view('movie',['movie' => $movies]);
     }
 
     public function sample()

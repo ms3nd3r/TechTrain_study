@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('movies', function (Blueprint $table) {
+        Schema::create('movie', function (Blueprint $table) {
             $table->id();
             $table->text('title')->comment('映画タイトル');
             $table->text('image_url')->comment('画像url');
@@ -32,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('movies');
+        Schema::dropIfExists('movie');
     }
 };
