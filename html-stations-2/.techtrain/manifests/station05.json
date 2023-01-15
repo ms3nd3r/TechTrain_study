@@ -1,0 +1,13 @@
+{
+  "name": "Station 5",
+  "id": 147,
+  "prepare": [],
+  "tests": [
+    {
+      "type": "command",
+      "title": "ローカルサーバでHTMLをブラウザから確認（自己申告）",
+      "command": "echo",
+      "args": []
+    }
+  ]
+}
