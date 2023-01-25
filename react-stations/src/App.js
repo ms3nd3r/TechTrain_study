@@ -15,7 +15,7 @@ export const App = () => {
     <div>
       <header>Dogアプリ</header>
       <img src={ dogUrl } width="300px"></img>
-      {/* <button onClick={ () => setDogUrl("https://images.dog.ceo/breeds/dalmatian/cooper2.jpg") }>チェンジ</button> */}
+      <button onClick={ () => setDogUrl("https://images.dog.ceo/breeds/dalmatian/cooper2.jpg") }>更新</button>
       <h1>犬の画像を表示するサイトです</h1>
     </div>
   )
