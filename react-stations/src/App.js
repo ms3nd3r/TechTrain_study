@@ -27,8 +27,10 @@ export const App = () => {
   return (
     <div>
       <header>Dogアプリ</header>
-      <img src={ dogUrl } width="300px"></img>
-      <button onClick={ () =>  randomImage() }>更新</button>
+      <div className='main'>
+        <img src={ dogUrl }></img>
+        <button onClick={ () =>  randomImage() }>更新</button>
+      </div>
       <h1>犬の画像を表示するサイトです</h1>
     </div>
   )
