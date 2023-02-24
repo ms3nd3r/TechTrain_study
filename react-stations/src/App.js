@@ -25,14 +25,17 @@ export const App = () => {
   
 
   return (
-    <div>
-      <header>Dogアプリ</header>
-      <div className='main'>
-        <img src={ dogUrl }></img>
-        <button onClick={ () =>  randomImage() }>更新</button>
-      </div>
-      <h1>犬の画像を表示するサイトです</h1>
-    </div>
+    <>
+    {/* ここにコンポーネントを呼び出したいんです。 */}
+    </>
+    // <div>
+    //   <header>Dogアプリ</header>
+    //   <div className='main'>
+    //     <img src={ dogUrl }></img>
+    //     <button onClick={ () =>  randomImage() }>更新</button>
+    //   </div>
+    //   <h1>犬の画像を表示するサイトです</h1>
+    // </div>
   )
 
 
