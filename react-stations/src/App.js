@@ -27,6 +27,7 @@ export const App = () => {
   return (
     <>
     {/* ここにコンポーネントを呼び出したいんです。 */}
+    {/* DogImage propsで受け取り */}
     </>
     // <div>
     //   <header>Dogアプリ</header>
