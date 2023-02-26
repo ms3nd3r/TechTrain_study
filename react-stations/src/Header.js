@@ -1,6 +1,8 @@
 // DO NOT DELETE
-function header(){
+import React from "react";
+
+export default function HeaderCp(){
     return(
         <header>Dogアプリ</header>
-    )
+    );
 }

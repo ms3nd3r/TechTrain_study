@@ -1,7 +1,10 @@
 // DO NOT DELETE
-function Description(){
-    const initialUrl = "https://images.dog.ceo/breeds/komondor/n02105505_3787.jpg"
-    const [dogUrl,setDogUrl] = useState(initialUrl)
+import React from "react";
+import { useEffect,useState } from 'react'
+
+export default function Description(){
+    const initialUrl = "https://images.dog.ceo/breeds/komondor/n02105505_3787.jpg";
+    const [dogUrl,setDogUrl] = useState(initialUrl);
   
     function randomImage(){
         fetch("https://dog.ceo/api/breeds/image/random")

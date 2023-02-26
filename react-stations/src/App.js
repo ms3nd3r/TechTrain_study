@@ -1,6 +1,8 @@
 // DO NOT DELETE
-import { useEffect,useState } from 'react'
+
 import * as React from 'react'
+import HeaderCp from './Header'
+import Description from './Description'
 import './App.css'
 
 /**
@@ -9,23 +11,11 @@ import './App.css'
  */
 
 export const App = () => {
-  const initialUrl = "https://images.dog.ceo/breeds/komondor/n02105505_3787.jpg"
-  const [dogUrl,setDogUrl] = useState(initialUrl)
-
-  function randomImage(){
-      fetch("https://dog.ceo/api/breeds/image/random")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) =>{
-        console.log(data.message);
-        setDogUrl(data.message);
-      })
-    }
-  
 
   return (
     <>
+    <HeaderCp />
+    <Description />
     {/* ここにコンポーネントを呼び出したいんです。 */}
     {/* DogImage propsで受け取り */}
     </>
