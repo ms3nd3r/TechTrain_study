@@ -1,7 +1,7 @@
 // DO NOT DELETE
 
 import * as React from 'react'
-import HeaderCp from './Header'
+import Header from './Header'
 import Description from './Description'
 import './App.css'
 
@@ -14,7 +14,7 @@ export const App = () => {
 
   return (
     <>
-    <HeaderCp />
+    <Header />
     <Description />
     {/* ここにコンポーネントを呼び出したいんです。 */}
     {/* DogImage propsで受け取り */}

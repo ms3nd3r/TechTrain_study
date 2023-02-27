@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from 'react'
 
-export default function DogImage(props){
+export default function DogImage(){
 
     const initialUrl = "https://images.dog.ceo/breeds/komondor/n02105505_3787.jpg";
     const [dogUrl,setDogUrl] = useState(initialUrl);
@@ -22,7 +22,7 @@ export default function DogImage(props){
     
     return(
         <div>
-            <img src={ props.dogUrl }></img>
+            <img src={ dogUrl }></img>
             <button onClick={ () =>  randomImage() }>更新</button>
         </div>
     );
