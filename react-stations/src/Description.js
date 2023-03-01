@@ -1,6 +1,7 @@
 // DO NOT DELETE
 import React from "react";
 import DogImage from "./DogImage";
+import dogUrl from "./DogImage";
 
 export default function Description(){
 
