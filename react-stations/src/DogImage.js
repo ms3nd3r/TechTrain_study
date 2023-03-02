@@ -2,10 +2,10 @@
 import React from "react";
 import { useState } from 'react'
 
-export default function DogImage(){
+export const DogImage = () => {
 
     const initialUrl = "https://images.dog.ceo/breeds/komondor/n02105505_3787.jpg";
-    const [dogUrl,setDogUrl] = useState(initialUrl);
+    const [DogUrl,setDogUrl] = useState(initialUrl);
   
     function randomImage(){
         fetch("https://dog.ceo/api/breeds/image/random")
@@ -22,7 +22,7 @@ export default function DogImage(){
     
     return(
         <div>
-            <img src={ dogUrl }></img>
+            <img src={ DogUrl }></img>
             <button onClick={ () =>  randomImage() }>更新</button>
         </div>
     );

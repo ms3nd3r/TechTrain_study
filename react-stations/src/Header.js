@@ -1,7 +1,7 @@
 // DO NOT DELETE
 import React from "react";
 
-export default function Header(){
+export const Header = () =>{
     return(
         <header>Dogアプリ</header>
     );
