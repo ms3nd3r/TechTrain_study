@@ -4,6 +4,7 @@ import * as React from 'react'
 import { Header } from './Header'
 import { Description } from './Description'
 import './App.css'
+import { DogListContainer } from './DogListContainer'
 
 /**
  * 
@@ -16,6 +17,7 @@ export const App = () => {
     <>
     <Header />
     <Description />
+    <DogListContainer />
     {/* ここにコンポーネントを呼び出したいんです。 */}
     </>
   )

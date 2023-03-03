@@ -21,8 +21,8 @@ export const Description = () => {
   
 
     return(
-    <div>
-      <div className='main'>
+    <div className='main'>
+      <div >
         <DogImage url={ url } />
             {/* DogImage propsで受け取り */}
         <button onClick={ () =>  randomImage() }>更新</button>
