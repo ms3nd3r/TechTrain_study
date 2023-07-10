@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PracticeController;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\AdminController;
 
 
 /*
@@ -30,4 +31,8 @@ Route::get('/getPractice', [PracticeController::class, 'getPractice']);
 
 Route::get('/movies', [MovieController::class, 'index']);
 
-Route::get('/admin/movies', [MovieController::class, 'adminIndex']);
+Route::get('/admin/movies', [AdminController::class, 'adminIndex']);
+
+Route::post('/admin/movies/store',[AdminController::class, 'store']);
+
+Route::get('/admin/movies/create', [AdminController::class, 'create']);

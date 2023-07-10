@@ -8,6 +8,11 @@
 </head>
 <body>
     <table>
+        @if (session('flash_message'))
+            <div class="flash_message">
+                {{ session('flash_message') }}
+            </div>
+        @endif
         <tr>
             <th>ID</th>
             <th>映画タイトル</th>

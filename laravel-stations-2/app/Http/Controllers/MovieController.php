@@ -12,10 +12,4 @@ class MovieController extends Controller
         return view('movie', ['movies' => $movies]);
     }
 
-    public function adminIndex()
-    {
-        $movies = Movie::all();
-        return view('adminMovie', ['movies' => $movies]);
-    }
-
 }
